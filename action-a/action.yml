@@ -9,8 +9,10 @@ inputs:
     default: "World"
 
 runs:
-  using: "docker"
-  image: "Dockerfile" 
+  using: "composite"
+  steps:
+    - run: echo "Hola mundo, ${{inputs.MY_NAME}}"
+      shell: bash
 
 branding:
   icon: "mic"
