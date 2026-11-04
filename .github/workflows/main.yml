@@ -9,7 +9,7 @@ on:
       tags:
         description: 'Test scenario tags'  
   schedule:
-    - cron: '2 0 * * *'
+    - cron: '13 11 * * *'
 jobs:
   build:
     name: Hello from build
