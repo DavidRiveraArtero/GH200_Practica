@@ -8,6 +8,8 @@ on:
         default: 'warning'
       tags:
         description: 'Test scenario tags'  
+  schedule:
+    - cron: '2 0 * * *'
 jobs:
   build:
     name: Hello from build
